@@ -4,6 +4,6 @@ The present project comprehends the development of a website using JavaScript by
 
 ## Website preview
 
-<p align="center"><img width="60%" src="/assets/img/dom.png"></p>
+<p align="center"><img width="100%" src="/assets/img/dom.png"></p>
 
 ### 
