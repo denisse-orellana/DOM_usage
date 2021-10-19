@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     addParagraph();
     addFormColumn();
     addCardColumn();
+    promoCode()
     endFooter();
 })
 
@@ -154,6 +155,32 @@ function addCardColumn() {
     liThree.appendChild(strong);
 }
 
+function promoCode() {
+    let form = document.createElement('form');
+    form.className = 'card p-2';
+    ul.insertAdjacentElement('afterend', form);
+
+    let div = document.createElement('div');
+    div.className = 'input-group';
+    form.appendChild(div);
+
+    let input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'form-control';
+    input.placeholder = 'Prome code';
+    div.appendChild(input);
+
+    let div2 = document.createElement('div');
+    div2.className = 'input-group-append';
+    div.appendChild(div2);
+
+    let button = document.createElement('button');
+    button.type = 'submit';
+    button.className = 'btn btn-secondary';
+    button.innerHTML = 'Redeem';
+    div2.appendChild(button);
+}
+
 function endFooter() {
     let footer = document.createElement('footer');
     footer.className = 'my-5 pt-5 text-muted text-center text-small';
@@ -163,4 +190,35 @@ function endFooter() {
     p.className = 'mb-1';
     p.innerHTML = '© 2017-2019 Company Name';
     footer.appendChild(p);
+
+    let ul = document.createElement('u');
+    ul.className = 'list-inline';
+    footer.appendChild(ul);
+
+    let li = document.createElement('li');
+    li.className = 'list-inline-item';
+    ul.appendChild(li);
+    
+    let a = document.createElement('a');
+    a.href = '#';
+    a.innerHTML = 'Privacy';
+    li.appendChild(a);
+
+    let lii = document.createElement('li');
+    lii.className = 'list-inline-item';
+    ul.appendChild(lii);
+
+    let aa = document.createElement('a');
+    aa.href = '#';
+    aa.innerHTML = 'Terms';
+    lii.appendChild(aa);
+
+    let liii = document.createElement('li');
+    liii.className = 'list-inline-item';
+    ul.appendChild(liii);
+
+    let aaa = document.createElement('a');
+    aaa.href = '#';
+    aaa.innerHTML = 'Support';
+    liii.appendChild(aaa);
 }
