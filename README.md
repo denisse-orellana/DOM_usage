@@ -6,4 +6,6 @@ The present project comprehends the development of a website using JavaScript by
 
 <p align="center"><img width="100%" src="/assets/img/dom.png"></p>
 
-### 
+### Website link
+
+The page can be seen here: [Cheackout form](https://denisseee.github.io/DOM_usage/)
