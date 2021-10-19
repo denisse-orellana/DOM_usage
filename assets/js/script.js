@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    addToBody();
-    addTitle();
-    addImage('./assets/img/boostrap.png');
-    addParagraph();
-    addFormColumn();
-    addCardColumn();
-    promoCode()
-    endFooter();
-})
+// document.addEventListener('DOMContentLoaded', function() {
+//     addToBody();
+//     addTitle();
+//     addImage('./assets/img/boostrap.png');
+//     addParagraph();
+//     addFormColumn();
+//     addCardColumn();
+//     promoCode()
+//     endFooter();
+// })
 
 function addToBody() {
     document.body.className = 'container bg-light';
@@ -222,3 +222,16 @@ function endFooter() {
     aaa.innerHTML = 'Support';
     liii.appendChild(aaa);
 }
+
+function loadContent() {
+    addToBody();
+    addTitle();
+    addImage('./assets/img/boostrap.png');
+    addParagraph();
+    addFormColumn();
+    addCardColumn();
+    promoCode()
+    endFooter();
+}
+
+loadContent();
